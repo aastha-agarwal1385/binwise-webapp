@@ -25,14 +25,12 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-card/90 backdrop-blur-md border-b border-border shadow-sm"
-          : "bg-transparent"
+        "fixed top-0 left-0 right-0 z-50 bg-card transition-shadow duration-300",
+        scrolled && "shadow-sm"
       )}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#home" className="flex items-center gap-2">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+        <a href="#home" className="flex items-center gap-2.5">
           <div className="flex size-9 items-center justify-center rounded-lg bg-primary">
             <Leaf className="size-5 text-primary-foreground" />
           </div>
@@ -41,17 +39,17 @@ export function Navbar() {
           </span>
         </a>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="rounded-md px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-medium text-foreground/70 transition-colors hover:text-primary"
             >
               {link.label}
             </a>
           ))}
-          <Button size="sm" className="ml-3">
+          <Button size="sm" className="ml-2">
             Get Started
           </Button>
         </div>
@@ -59,7 +57,7 @@ export function Navbar() {
         <Button
           variant="ghost"
           size="icon"
-          className="md:hidden"
+          className="text-foreground/70 md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
@@ -68,14 +66,14 @@ export function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="border-b border-border bg-card/95 backdrop-blur-md md:hidden">
+        <div className="border-t border-border bg-card md:hidden">
           <div className="flex flex-col gap-1 px-6 py-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="rounded-md px-4 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+                className="rounded-md px-4 py-3 text-sm font-medium text-foreground/70 transition-colors hover:bg-accent hover:text-primary"
               >
                 {link.label}
               </a>
