@@ -1,8 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
-import { Menu, X } from "lucide-react"
+import { Leaf, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -32,14 +31,9 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
         <a href="#home" className="flex items-center gap-2.5">
-          <Image
-            src="/images/binwise-logo.jpg"
-            alt="BinWise logo"
-            width={36}
-            height={36}
-            className="size-9 rounded-lg object-contain"
-            priority
-          />
+          <div className="flex size-9 items-center justify-center rounded-lg bg-primary">
+            <Leaf className="size-5 text-primary-foreground" />
+          </div>
           <span className="font-display text-xl font-bold tracking-tight text-foreground">
             BinWise
           </span>
