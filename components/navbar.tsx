@@ -25,8 +25,8 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 bg-card transition-shadow duration-300",
-        scrolled && "shadow-sm"
+        "fixed top-0 left-0 right-0 z-50 bg-card shadow-[0_1px_3px_0_rgba(0,0,0,0.08)] transition-shadow duration-300",
+        scrolled && "shadow-[0_2px_8px_0_rgba(0,0,0,0.1)]"
       )}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
