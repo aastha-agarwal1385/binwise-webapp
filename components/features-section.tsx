@@ -21,13 +21,13 @@ const features = [
     icon: BarChart3,
     title: "Real-Time Dashboard",
     description:
-      "Monitor campus cleanliness scores, waste collection trends, and recycling rates with live, interactive charts and metrics.",
+      "Monitor city-wide cleanliness scores, waste collection trends, and recycling rates with live, interactive charts and metrics.",
   },
   {
     icon: MapPin,
     title: "Hotspot Detection",
     description:
-      "Automatically identify high-waste zones across campus so cleanup efforts can be directed where they matter most.",
+      "Automatically identify high-waste zones across the city so cleanup efforts can be directed where they matter most.",
   },
   {
     icon: Bell,
@@ -45,7 +45,7 @@ const features = [
     icon: Shield,
     title: "Community Reporting",
     description:
-      "Enable students and staff to report waste issues directly through the app, fostering accountability and engagement.",
+      "Enable residents and community members to report waste issues directly through the app, fostering accountability and engagement.",
   },
 ]
 
@@ -63,7 +63,7 @@ export function FeaturesSection() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground leading-relaxed">
             From AI classification to real-time dashboards, BinWise gives your
-            campus the tools to manage waste effectively and sustainably.
+            city the tools to manage waste effectively and sustainably.
           </p>
         </div>
 

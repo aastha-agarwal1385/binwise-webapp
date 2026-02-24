@@ -6,19 +6,19 @@ const values = [
     icon: Target,
     title: "Our Mission",
     description:
-      "To revolutionize waste management on campuses using AI-driven classification, helping communities move towards zero-waste environments.",
+      "To revolutionize waste management across cities using AI-driven classification, helping communities move towards zero-waste environments.",
   },
   {
     icon: Users,
     title: "Community Driven",
     description:
-      "We believe change starts at the grassroots. BinWise empowers students, faculty, and local organizations to take ownership of their environment.",
+      "We believe change starts at the grassroots. BinWise empowers residents, local organizations, and municipal teams to take ownership of their environment.",
   },
   {
     icon: Globe,
     title: "Sustainable Impact",
     description:
-      "Every piece of waste properly classified contributes to a cleaner planet. Our platform has helped reduce landfill contributions by over 40% on partner campuses.",
+      "Every piece of waste properly classified contributes to a cleaner planet. Our platform has helped reduce landfill contributions by over 40% in partner cities.",
   },
 ]
 
@@ -61,7 +61,7 @@ export function AboutSection() {
 
         <div className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-4">
           {[
-            { value: "50+", label: "Campus Partners" },
+            { value: "50+", label: "City Partners" },
             { value: "12K+", label: "Waste Reports" },
             { value: "2.4T", label: "CO2 Reduced" },
             { value: "5K+", label: "Active Volunteers" },

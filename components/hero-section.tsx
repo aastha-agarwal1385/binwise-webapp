@@ -32,7 +32,7 @@ export function HeroSection() {
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/70">
           BinWise uses AI to classify and monitor waste in real time, helping
-          campuses and communities reduce pollution, improve recycling, and
+          cities and communities reduce pollution, improve recycling, and
           build a sustainable future.
         </p>
 
@@ -54,7 +54,7 @@ export function HeroSection() {
         <div className="mx-auto mt-20 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3">
           {[
             { icon: Recycle, label: "Waste Classified", value: "12,480+" },
-            { icon: BarChart3, label: "Campus Score", value: "87/100" },
+            { icon: BarChart3, label: "City Score", value: "87/100" },
             { icon: Leaf, label: "CO2 Reduced", value: "2.4 Tons" },
           ].map((stat) => (
             <div

@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Address",
-    value: "Green Campus Hub, Bangalore, India",
+    value: "Green City Hub, Bangalore, India",
     href: "#",
   },
 ]

@@ -20,7 +20,7 @@ const roles = [
     id: "volunteer",
     label: "Volunteer",
     icon: Users,
-    description: "Join campus clean-up drives, waste sorting events, and awareness campaigns.",
+    description: "Join community clean-up drives, waste sorting events, and awareness campaigns.",
     perks: [
       "Community service hours",
       "Certificate of participation",
@@ -32,7 +32,7 @@ const roles = [
     id: "ngo",
     label: "NGO",
     icon: Building2,
-    description: "Partner with us to scale waste management impact across multiple campuses.",
+    description: "Partner with us to scale waste management impact across multiple cities.",
     perks: [
       "Access to waste data analytics",
       "Co-branded campaigns",
@@ -44,7 +44,7 @@ const roles = [
     id: "recycler",
     label: "Recycling Partner",
     icon: Recycle,
-    description: "Connect with campuses to source recyclable materials and close the loop.",
+    description: "Connect with cities to source recyclable materials and close the loop.",
     perks: [
       "Verified waste stream data",
       "Priority pickups",
@@ -75,7 +75,7 @@ export function JoinSection() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground leading-relaxed">
             Whether you are a student volunteer, an NGO, or a recycling
-            partner, there is a place for you in building a cleaner campus.
+            partner, there is a place for you in building a cleaner community.
           </p>
         </div>
 

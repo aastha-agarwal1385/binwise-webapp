@@ -64,11 +64,11 @@ export function DashboardSection() {
             Live Dashboard
           </Badge>
           <h2 className="font-display text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            <span className="text-balance">Campus Cleanliness Dashboard</span>
+            <span className="text-balance">City Cleanliness Dashboard</span>
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-muted-foreground leading-relaxed">
             Real-time metrics on waste collection, cleanliness scores, and
-            environmental impact across the campus.
+            environmental impact across the city.
           </p>
         </div>
 

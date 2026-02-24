@@ -16,7 +16,7 @@ export function Footer() {
             </a>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
               AI-powered smart waste segregation and monitoring for cleaner
-              campuses and a sustainable future.
+              cities and a sustainable future.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export function Footer() {
               Community
             </h4>
             <ul className="space-y-2.5">
-              {["Volunteers", "NGO Partners", "Recyclers", "Campus Admins"].map(
+              {["Volunteers", "NGO Partners", "Recyclers", "City Admins"].map(
                 (link) => (
                   <li key={link}>
                     <a
