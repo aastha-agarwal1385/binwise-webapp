@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Leaf, Menu, X } from "lucide-react"
+import Image from "next/image"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -31,15 +32,20 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
         <a href="#home" className="flex items-center gap-2.5">
-          <div className="flex size-9 items-center justify-center rounded-lg bg-primary">
-            <Leaf className="size-5 text-primary-foreground" />
-          </div>
+          <Image
+            src="/images/binwise-logo.jpg"
+            alt="BinWise logo"
+            width={36}
+            height={36}
+            className="size-9 rounded-lg object-contain"
+            priority
+          />
           <span className="font-display text-xl font-bold tracking-tight text-foreground">
             BinWise
           </span>
         </a>
 
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-6 sm:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -57,7 +63,7 @@ export function Navbar() {
         <Button
           variant="ghost"
           size="icon"
-          className="text-foreground/70 md:hidden"
+          className="text-foreground/70 sm:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
@@ -66,7 +72,7 @@ export function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="border-t border-border bg-card md:hidden">
+        <div className="border-t border-border bg-card sm:hidden">
           <div className="flex flex-col gap-1 px-6 py-4">
             {navLinks.map((link) => (
               <a
